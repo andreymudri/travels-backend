@@ -1,8 +1,8 @@
 import express from "express";
-import { getAllTravels } from "../controllers/travels.controller.js";
+import { getTravels } from "../controllers/travels.controller.js";
 
 const travels = express.Router();
 
-travels.get('/passengers/travels',getAllTravels)
+travels.get('/passengers/travels',getTravels)
 
 export default travels

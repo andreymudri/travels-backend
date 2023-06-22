@@ -9,7 +9,7 @@ export async function getAllTravelsDb() {
         JOIN travels ON travels.id = passenger_travels."travelId"
         GROUP BY p."fullName"
         ORDER BY viagens DESC
-        LIMIT 100;
+        LIMIT 25;
       `;
     return await connection.query(query);
   } catch (err) {
